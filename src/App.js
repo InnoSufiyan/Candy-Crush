@@ -32,7 +32,15 @@ const App = () => {
 
 
   return (
-    <div></div>
+    <div className="app">
+      <div className="game">
+        {currentColorArrangement.map((colorCandy, index) => (
+          <img key={index} style={{
+            backgroundColor : colorCandy
+          }} />
+        ))}
+      </div>
+    </div>
   )
 
 }
